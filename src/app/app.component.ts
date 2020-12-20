@@ -9,9 +9,13 @@ import * as gifshot from 'gifshot';
 export class AppComponent implements OnInit {
   public base64Gif: string;
   running = false;
+  baseUrl = 'fchat/assets';
+
   ngOnInit() {
 
   }
+
+
 
   createGif(arr: Array<any>) {
     console.log('arr', arr);
@@ -65,26 +69,26 @@ export class AppComponent implements OnInit {
   lettersToPath(letter: string) {
     console.log('converting', letter);
     if (letter === ' ') {
-      return `assets/step-3-letters/space.jpg`;
+      return `${this.baseUrl}/step-3-letters/space.jpg`;
     }
 
     if (letter === '!') {
-      return `assets/step-3-letters/exclamation.jpg`;
+      return `${this.baseUrl}/step-3-letters/exclamation.jpg`;
     }
 
-    return `assets/step-3-letters/${letter}.jpg`;
+    return `${this.baseUrl}/step-3-letters/${letter}.jpg`;
   }
   lettersToPath2(letter: string) {
 
     if (letter === ' ') {
-      return `assets/step-2-letters/space.jpg`;
+      return `${this.baseUrl}/step-2-letters/space.jpg`;
     }
 
     if (letter === '!') {
-      return `assets/step-2-letters/exclamation.jpg`;
+      return `${this.baseUrl}/step-2-letters/exclamation.jpg`;
     }
 
-    return `assets/step-2-letters/${letter}.jpg`;
+    return `${this.baseUrl}/step-2-letters/${letter}.jpg`;
   }
 
 
