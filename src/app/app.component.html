@@ -8,6 +8,7 @@
     <div *ngIf="running" class="img-section text-align-center">
       <div *ngIf="base64Gif; else loading" class="img-container">
         <img [src]="base64Gif" />
+        <small>Right click to download</small>
       </div>
     </div>
     <ng-template #loading>

@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
     console.log(chars);
     const returnArray = [];
     chars.forEach(char => {
-      returnArray.push('assets/base-frames/step-1.jpg');
+      returnArray.push( `${this.baseUrl}/base-frames/step-1.jpg`);
       returnArray.push(this.lettersToPath2(char));
       returnArray.push(this.lettersToPath(char));
     });
