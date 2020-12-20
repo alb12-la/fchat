@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n  <div class=\"d-flex  flex-column\">\n    <div class=\"\">\n      <label for=\"exampleInputEmail1\">Enter some text</label>\n      <input type=\"text\" (change)=\"this.onTextchanges($event.target.value)\" class=\"form-control\">\n      <small>Press Enter to submit</small>\n    </div>\n    <div *ngIf=\"running\" class=\"img-section text-align-center\">\n      <div *ngIf=\"base64Gif; else loading\" class=\"img-container\">\n        <img [src]=\"base64Gif\" />\n        <small>Right click to download</small>\n      </div>\n    </div>\n    <ng-template #loading>\n      Loading...\n    </ng-template>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n  <div class=\"d-flex flex-column mb-5\">\n    <div class=\"\">\n      <label for=\"exampleInputEmail1\">Enter some text</label>\n      <input type=\"text\" (change)=\"this.onTextchanges($event.target.value)\" class=\"form-control\">\n      <small>Press Enter to submit</small>\n    </div>\n\n    <div *ngIf=\"running\" class=\"img-section text-align-center\">\n      <div *ngIf=\"base64Gif; else loading\" class=\"img-container\">\n        <img [src]=\"base64Gif\" />\n      </div>\n      <small>Right click to download</small>\n    </div>\n    <ng-template #loading>\n      Loading...\n    </ng-template>\n  </div>");
 
 /***/ }),
 
