@@ -7,7 +7,7 @@ import * as gifshot from 'gifshot';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  private base64Gif: string;
+  public base64Gif: string;
   running = false;
   ngOnInit() {
 
